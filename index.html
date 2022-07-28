@@ -8,48 +8,482 @@
     <title>Edu+</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Edu+</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent justify-content-center">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">
-                            Deals
-                        </a>
+    <header class="Container">
+        <div class="Header1">
+            <nav class="navbar shadow-lg fixed-top navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#">EDU +<i
+                            class="fa-solid fa-graduation-cap ps-2 text-primary"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Success </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                    <button class="btn btn-outline-info" type="submit">Register</button>
-                </ul>
+                        <i class="fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav header-menu">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#HeaderContainer">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#AboutContainer">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#success">Sucess</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faqs">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#RegisterContainer">Register</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link call-btn btn d-inline-block bg-info broder" href="#call"><i
+                                        class="fa-solid fa-phone"></i> Register</a>
+                            </li>
+                        </ul>
 
-
-
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Header Slider -->
+        <div class="Header2">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1>Get Started Digital Learning </h1>
+                            <p>To keep pace with the world, start digital learning with us.</p>
+                            <button class="get-started-btn btn btn-info">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1>Get Started Digital Learning With <span class="text-primary">LB Learn</span></h1>
+                            <p>To keep pace with the world, start digital learning with us.</p>
+                            <button class="get-started-btn btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1>Get Started Digital Learning With <span class="text-primary">LB Learn</span></h1>
+                            <p>To keep pace with the world, start digital learning with us.</p>
+                            <button class="get-started-btn btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </nav>
+    </header>
+    <!-- carousel end-->
+    <!-- MAIN SECTION START HERE -->
+    <main id="MainContainer">
+        <!-- Courses -->
+
+        <section id="courses">
+            <div class="container">
+                <div class="CoursesHeader text-center mb-5 w-50 mx-auto">
+                    <h2 class="mb-3 course-header-title">Our Most Popular <span class="text-primary">Courses</span></h2>
+                    <p class="course-header-brief">Choose your preferred course from our popular courses. And start your
+                        digital learning with us</p>
+                </div>
+                <div class="CourseLists position-relative">
+                    <div class="row g-0 d-flex justify-content-between">
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-1.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Fundamental Of UI/UX Design</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-2.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Javascript Basic to advanced</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+                    </div><!-- Row End -->
+
+                    <div class="row g-0 d-flex justify-content-between">
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-3.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Fullstack Web Development</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-4.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Digital Marketing</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+                    </div><!-- Row End -->
+
+                    <div class="row g-0 d-flex justify-content-between">
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-5.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Photography Basic Rules</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-12 col-lg-6 d-flex align-items-center border rounded-3 border-start-0 course-item">
+                            <div class="course-img pe-3">
+                                <img src="images/course/course-6.png" alt="">
+                            </div>
+
+                            <div class="course-content pe-3">
+                                <h5 class="course-title">Motion Graphics</h5>
+                                <p class="course-brief">Choose your preferred course from our popular courses. And start
+                                    your digital learning with us</p>
+                                <p class="price">Price : 20$</p>
+                            </div>
+                        </div>
+                    </div><!-- Row End -->
+                    <div class="more-courses position-relative">
+                        <button
+                            class="btn more-courses-btn position-absolute top-100 start-50 translate-middle mt-5 btn-primary">See
+                            More Courses</button>
+                    </div>
+
+                </div>
+                <!--/Course Lists-->
+            </div>
+        </section>
+
+        <!-- Registar Section -->
+        <section id="RegisterContainer" class="bg-primary py-5">
+            <div class="container reg-content d-flex justify-content-between align-items-center">
+                <div class="register-content w-50">
+                    <h2 class="register-title text-white mb-5">Ready to join?</h2>
+                    <p class="register-brief text-white">Welcome to the world of digital learning. Register now for our
+                        course to manage your life with technology.</p>
+                </div>
+                <div class="register-btn">
+                    <button type="button" class="btn bg-white text-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Register Now</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Registration Form  -->
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="1234 Main St">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputAddress2" class="form-label">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2"
+                                                placeholder="Apartment, studio, or floor">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Choose</option>
+                                                <option>American</option>
+                                                <option>Argentina</option>
+                                                <option>Bangladesh</option>
+                                                <option>Brasil</option>
+                                                <option>India</option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Check me out
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section -->
+        <section id="AboutContainer">
+            <div class="container">
+                <h2 class="text-center mb-5">Why We Best For You</h2>
+                <div
+                    class="about-content d-flex flex-lg-row flex-md-column-reverse flex-sm-column-reverse align-items-center">
+                    <div class="about-img w-50">
+                        <img src="images/working.png" alt="">
+                    </div>
+                    <div class="about-text w-50 me-lg-5 mt-md-5 mt-sm-5">
+                        <h5>Why should you take a course with us</h5>
+                        <p>Nowadays there are many online learning institutes like ours. Still why should you waste your
+                            valuable time taking a course with us. We conduct each course by highly skilled teachers.
+                            Our courses are module based. At the end of each module we have an assignment. So that you
+                            can check yourself how much you have learned from the module. After your essay is checked by
+                            our skilled teachers, you are assigned a number. Your mistakes are pointed out to you.
+                        </p>
+                        <button class="btn bg-info text-white">Read More</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sucess Section -->
+        <section class="sucess bg-light p-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-3">Our <span class="text-primary">Successful</span> Students Story</h2>
+                    <p class="mb-5 text-center">Our successful students are now working in various big IT companies.
+                        Hear about their own successes.</p>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sucess-content">
+                            <img src="images/student/student-1.png" alt="">
+                            <div class="sucess-story">
+                                <h5 class="mt-3 mb-0">Awlad Hossain</h5>
+                                <p class="skill">UI/UX Designer</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sucess-content">
+                            <img src="images/student/student-2.png" alt="">
+                            <div class="sucess-story">
+                                <h5 class="mt-3 mb-0">Jannatul Islam</h5>
+                                <p class="skill">Motion Design</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sucess-content">
+                            <img src="images/student/student-3.png" alt="">
+                            <div class="sucess-story">
+                                <h5 class="mt-3 mb-0">Imran Hossain</h5>
+                                <p class="skill">Graphic Designer</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sucess-content">
+                            <img src="images/student/student-4.png" alt="">
+                            <div class="sucess-story">
+                                <h5 class="mt-3 mb-0">Nishi Akter</h5>
+                                <p class="skill">Web Developer</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trusted Companies Section -->
+
+
+        <!-- FAQs Section -->
+        <section class="faqs  justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <h2 class="mb-5">Frequently Asked Questions</h2>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        what is the difference between flexbox and css grid
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        CSS Grid and Flexbox are layout models that share similarities and can be used
+                                        together. The key difference is that CSS Grid can be used to create
+                                        two-dimensional layouts, while Flexbox can only be used to create
+                                        one-dimensional layouts. That means you can place components along the X- and
+                                        Y-axis in CSS Grid and only one axis in Flexbox.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        what is the difference between bootstrap and tailwind
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Bootstrap's utility and layout classes provide you with everything you need to
+                                        style a responsive webpage. With Tailwind, however, you are much more involved
+                                        in styling the webpage because you end up having to create your own components
+                                        using the utility classes that the framework offers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        what is css box model
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        In CSS, the term "box model" is used when talking about design and layout. The
+                                        CSS box model is essentially a box that wraps around every HTML element. It
+                                        consists of: margins, borders, padding, and the actual content.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        What is semantic tag
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A semantic element clearly describes its meaning to both the browser and the
+                                        developer. Examples of non-semantic elements: &lt;div&gt; and &lt;span&gt; -
+                                        Tells nothing about its content. Examples of semantic elements: &lt;form&gt; ,
+                                        &lt;table&gt; , and &lt;article&gt; - Clearly defines its content.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 faqs-img">
+                        <img src="assets/images/cover/header-bannar3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trust-company">
+            <div class="container">
+                <h2 class="trust-title text-center mb-5">Trusted By Over 800+ Companies</h2>
+                <div class="company-logo d-flex justify-content-between">
+                    <img src="images/company/company-1.png" alt="">
+                    <img src="images/company/company-2.png" alt="">
+                    <img src="images/company/company-3.png" alt="">
+                    <img src="images/company/company-4.png" alt="">
+                    <img src="images/company/company-5.png" alt="">
+                    <img src="images/company/company-6.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MAIN SECTION END HERE -->
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
